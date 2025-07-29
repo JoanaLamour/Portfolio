@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - UX/UI Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="projects/project1.html">Project 1</a></li>
+                <li><a href="projects/project2.html">Project 2</a></li>
+                <li><a href="projects/project3.html">Project 3</a></li>
+                <li><a href="projects/project4.html">Project 4</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Brief introduction about myself and my design philosophy.</p>
+        </section>
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <p>Overview of my education, experience, and skills.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects Overview</h2>
+            <div class="project">
+                <h3><a href="projects/project1.html">Project 1</a></h3>
+                <p>Short description of Project 1.</p>
+            </div>
+            <div class="project">
+                <h3><a href="projects/project2.html">Project 2</a></h3>
+                <p>Short description of Project 2.</p>
+            </div>
+            <div class="project">
+                <h3><a href="projects/project3.html">Project 3</a></h3>
+                <p>Short description of Project 3.</p>
+            </div>
+            <div class="project">
+                <h3><a href="projects/project4.html">Project 4</a></h3>
+                <p>Short description of Project 4.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch, please fill out the form below.</p>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

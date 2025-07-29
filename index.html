@@ -3,10 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Digital Product Design portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, I’m [Your Name]</h1>
-  <p>Welcome to my portfolio!</p>
+  <nav class="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section home-section" style="position:relative;">
+      <!-- More visible one-line wave illustration as background -->
+      <div class="section-bg-illustration" aria-hidden="true" style="position:absolute;top:20px;left:0;width:100%;height:160px;z-index:0;pointer-events:none;opacity:0.7;">
+        <svg viewBox="0 0 900 160" width="100%" height="160" preserveAspectRatio="none">
+          <!-- Abstract screen -->
+          <rect x="350" y="40" width="200" height="80" rx="12" stroke="#111" stroke-width="6" fill="none"/>
+          <!-- Cursor arrow -->
+          <polyline points="420,70 440,90 430,90 430,110" stroke="#111" stroke-width="6" fill="none"/>
+        </svg>
+      </div>
+      <h1 style="position:relative;z-index:1;">Digital Product Design portfolio</h1>
+      <p style="position:relative;z-index:1;">Welcome! I’m [Your Name], a UX/UI designer passionate about creating delightful digital experiences.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section about-section" style="position:relative;">
+      <!-- More visible one-line face illustration as background -->
+      <div class="section-bg-illustration" aria-hidden="true" style="position:absolute;top:30px;right:30px;width:220px;height:220px;z-index:0;pointer-events:none;opacity:0.5;">
+        <svg viewBox="0 0 220 220" width="220" height="220">
+          <!-- Face outline -->
+          <ellipse cx="110" cy="120" rx="70" ry="80" stroke="#111" stroke-width="6" fill="none"/>
+          <!-- Bun -->
+          <ellipse cx="110" cy="40" rx="28" ry="18" stroke="#111" stroke-width="6" fill="none"/>
+          <!-- Glasses -->
+          <ellipse cx="80" cy="110" rx="18" ry="12" stroke="#111" stroke-width="6" fill="none"/>
+          <ellipse cx="140" cy="110" rx="18" ry="12" stroke="#111" stroke-width="6" fill="none"/>
+          <line x1="98" y1="110" x2="122" y2="110" stroke="#111" stroke-width="6"/>
+          <!-- Smile -->
+          <path d="M90,150 Q110,170 130,150" stroke="#111" stroke-width="6" fill="none"/>
+        </svg>
+      </div>
+      <h2 style="position:relative;z-index:1;">About Me</h2>
+      <div class="about-content" style="position:relative;z-index:1;">
+        <div class="about-text">
+          <p>
+            I’m a digital product designer with a focus on user experience, interface design, and creative problem solving. My work blends empathy, strategy, and visual storytelling.
+          </p>
+          <p>
+            <a href="cv.pdf" target="_blank" rel="noopener">View my CV</a>
+          </p>
+        </div>
+        <div class="about-illustration">
+          <!-- Minimalist portrait, smaller version -->
+          <svg viewBox="0 0 120 120" width="120" height="120" aria-hidden="true" style="opacity:0.8;">
+            <ellipse cx="60" cy="70" rx="38" ry="44" stroke="#111" stroke-width="4" fill="none"/>
+            <ellipse cx="60" cy="28" rx="16" ry="10" stroke="#111" stroke-width="4" fill="none"/>
+            <ellipse cx="44" cy="68" rx="10" ry="7" stroke="#111" stroke-width="4" fill="none"/>
+            <ellipse cx="76" cy="68" rx="10" ry="7" stroke="#111" stroke-width="4" fill="none"/>
+            <line x1="54" y1="68" x2="66" y2="68" stroke="#111" stroke-width="4"/>
+            <path d="M48,92 Q60,104 72,92" stroke="#111" stroke-width="4" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section" style="position:relative;">
+      <!-- More visible one-line geometric shapes illustration as background -->
+      <div class="section-bg-illustration" aria-hidden="true" style="position:absolute;bottom:30px;left:30px;width:220px;height:120px;z-index:0;pointer-events:none;opacity:0.4;">
+        <svg viewBox="0 0 220 120" width="220" height="120">
+          <!-- Grid -->
+          <rect x="20" y="20" width="80" height="80" stroke="#111" stroke-width="6" fill="none"/>
+          <line x1="60" y1="20" x2="60" y2="100" stroke="#111" stroke-width="6"/>
+          <line x1="20" y1="60" x2="100" y2="60" stroke="#111" stroke-width="6"/>
+          <!-- Pencil -->
+          <polygon points="150,40 200,60 180,80 130,60" stroke="#111" stroke-width="6" fill="none"/>
+          <line x1="150" y1="40" x2="180" y2="80" stroke="#111" stroke-width="6"/>
+        </svg>
+      </div>
+      <h2 style="position:relative;z-index:1;">Projects</h2>
+      <div class="projects-list" style="position:relative;z-index:1;">
+        <article class="project-card">
+          <h3>Project One</h3>
+          <p>Short description of project one.</p>
+          <a href="project1.html">View Project</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Two</h3>
+          <p>Short description of project two.</p>
+          <a href="project2.html">View Project</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Three</h3>
+          <p>Short description of project three.</p>
+          <a href="project3.html">View Project</a>
+        </article>
+        <article class="project-card">
+          <h3>Project Four</h3>
+          <p>Short description of project four.</p>
+          <a href="project4.html">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section" style="position:relative;">
+      <!-- More visible one-line envelope illustration as background -->
+      <div class="section-bg-illustration" aria-hidden="true" style="position:absolute;bottom:30px;right:30px;width:160px;height:100px;z-index:0;pointer-events:none;opacity:0.5;">
+        <svg viewBox="0 0 160 100" width="160" height="100">
+          <!-- Envelope -->
+          <rect x="60" y="30" width="80" height="40" stroke="#111" stroke-width="6" fill="none"/>
+          <polyline points="60,30 100,60 140,30" stroke="#111" stroke-width="6" fill="none"/>
+          <!-- Hand (abstract) -->
+          <path d="M40,80 Q60,70 80,80 Q100,90 120,80" stroke="#111" stroke-width="6" fill="none"/>
+          <line x1="80" y1="80" x2="80" y2="70" stroke="#111" stroke-width="6"/>
+        </svg>
+      </div>
+      <h2 style="position:relative;z-index:1;">Contact</h2>
+      <form class="contact-form" autocomplete="off" style="position:relative;z-index:1;">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p style="position:relative;z-index:1;">Or email me at <a href="mailto:your@email.com">your@email.com</a></p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 [Your Name]. All rights reserved.
+  </footer>
 </body>
 </html>
